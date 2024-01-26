@@ -48,13 +48,19 @@ export function ThemeProvider({
     root.classList.add(theme);
   }, [theme]);
 
-  return (value = {
+  const value = {
     theme,
     setTheme: (theme: Theme) => {
       localStorage.setItem(storageKey, theme);
       setTheme(theme);
     },
-  });
+  };
+
+  return (
+    <ThemeProviderContext.Provider {...props} value={value}>
+      {children}
+    </ThemeProviderContext.Provider>
+  );
 }
 
 export const useTheme = () => {
