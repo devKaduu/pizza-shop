@@ -23,9 +23,9 @@ const AccountMenu = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56">
         <DropdownMenuLabel className="flex flex-col">
-          <span>Enrico Hernandez</span>
+          <span>Carlos Eduardo</span>
           <span className="text-xs font-normal text-muted-foreground">
-            enrico@pizzashop.com.br
+            carlos@pizzashop.com.br
           </span>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
