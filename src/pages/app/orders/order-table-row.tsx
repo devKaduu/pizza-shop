@@ -19,9 +19,7 @@ const OrderTableRow = () => {
           <OrderDetails />
         </Dialog>
       </TableCell>
-      <TableCell className="font-mono text-xs font-medium">
-        d31321ser231
-      </TableCell>
+      <TableCell className="font-mono text-xs font-medium">d31321ser231</TableCell>
       <TableCell className="text-muted-foreground">há 15 minutos</TableCell>
       <TableCell>
         <div className="flex items-center gap-2">

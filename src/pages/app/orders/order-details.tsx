@@ -1,18 +1,5 @@
-import {
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableFooter,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Table, TableBody, TableCell, TableFooter, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const OrderDetails = () => {
   return (
@@ -30,9 +17,7 @@ const OrderDetails = () => {
               <TableCell className="flex justify-end">
                 <div className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-slate-400" />
-                  <span className="font-medium text-muted-foreground">
-                    Pendente
-                  </span>
+                  <span className="font-medium text-muted-foreground">Pendente</span>
                 </div>
               </TableCell>
             </TableRow>
@@ -48,15 +33,11 @@ const OrderDetails = () => {
 
             <TableRow>
               <TableCell className="text-muted-foreground">Email</TableCell>
-              <TableCell className="flex justify-end">
-                jucalol@gmail.com
-              </TableCell>
+              <TableCell className="flex justify-end">jucalol@gmail.com</TableCell>
             </TableRow>
 
             <TableRow>
-              <TableCell className="text-muted-foreground">
-                Realizado há
-              </TableCell>
+              <TableCell className="text-muted-foreground">Realizado há</TableCell>
               <TableCell className="flex justify-end">há 3 minutos</TableCell>
             </TableRow>
           </TableBody>
@@ -88,9 +69,7 @@ const OrderDetails = () => {
           <TableFooter>
             <TableRow>
               <TableCell colSpan={3}>Total do pedido</TableCell>
-              <TableCell className="text-right font-medium">
-                R$ 259,60
-              </TableCell>
+              <TableCell className="text-right font-medium">R$ 259,60</TableCell>
             </TableRow>
           </TableFooter>
         </Table>
