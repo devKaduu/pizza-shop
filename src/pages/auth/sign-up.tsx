@@ -30,12 +30,9 @@ const SignUp = () => {
       console.log(data);
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
-      toast.success("Restaurante cadastro com sucesso!", {
-        action: {
-          label: "Login",
-          onClick: () => navigate("/sign-in"),
-        },
-      });
+      navigate("/sign-in");
+
+      toast.success("Restaurante cadastro com sucesso!");
     } catch {
       toast.error("Error ao cadastrar restaurante.");
     }

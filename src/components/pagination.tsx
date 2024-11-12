@@ -1,9 +1,4 @@
-import {
-  ChevronLeft,
-  ChevronRight,
-  ChevronsLeft,
-  ChevronsRight,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
 import { Button } from "./ui/button";
 
 interface PaginationProps {
@@ -17,9 +12,7 @@ const Pagination = ({ pageIndex, totalCount, perPage }: PaginationProps) => {
 
   return (
     <div className="flex items-center justify-between">
-      <span className="text-sm text-muted-foreground">
-        Total de {totalCount} item(s)
-      </span>
+      <span className="text-sm text-muted-foreground">Total de {totalCount} item(s)</span>
       <div className="flex items-center gap-6 lg:gap-8">
         <div className="text-sm font-medium">
           Página {pageIndex + 1} de {pages}
